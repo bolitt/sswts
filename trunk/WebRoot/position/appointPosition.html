@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="appointPosition.css">
+<script type="text/javascript" src="appointPosition.js"></script>
+<div class="smallmain" style="top:33px;height:403px">
+	<div id="wizard1" dojoType="WizardContainer" style="width: 97%"
+		nextButtonLabel="next >>" previousButtonLabel="&lt;&lt; previous">
+		<div dojoType="WizardPane" label="Tab 1">
+			<h1>
+				Step1: 操作选择
+			</h1>
+			<input type="radio" id="appointappposrd" name="chooseappoint"
+				checked="true">
+			干部任命
+			<br>
+			<input type="radio" id="appointrevposrd" name="chooseappoint">
+			干部免除
+			<br>
+		</div>
+		<div dojoType="WizardPane" nextFunction="getSimpleUserinfo">
+			<h1>
+				Step2: 请输入学号
+			</h1>
+			<input type="text" size="30" id="appointstnum" />
+		</div>
+		<div dojoType="WizardPane" nextFunction="checkUserinfo">
+			<h1>
+				Step3: 人员信息确认
+			</h1>
+			<div id="appointuserinfo">
+				Loading...
+			</div>
+			<input type="checkbox" id="appointuserinfocb" />
+			确认
+		</div>
+		<div dojoType="WizardPane" doneFunction="submitAppointPostion">
+			<h1 id="appointposstep4">
+
+			</h1>
+			<div id="appointposition">
+				Loading...
+			</div>
+		</div>
+	</div>
+</div>

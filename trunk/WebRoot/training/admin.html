@@ -1,0 +1,189 @@
+﻿<link rel="stylesheet" type="text/css" href="admin.css" />
+<script type="text/javascript" src="admin.js"></script>
+<div class="smallmain">
+	<div id="trainings" dojoType="TabContainer"
+		style="width: 39%; height: 100%; position: relative; float: left; overflow:hidden">
+		<div id="currentTrainingTab" dojoType="ContentPane" label="当前培训"
+			style="overflow: auto">
+			<div id="currentTraining">
+				加载中……请稍候
+			</div>
+		</div>
+		<div id="oldTrainingTab" dojoType="ContentPane" label="过往培训"
+			style="overflow: auto">
+			<div id="oldTraining">
+				加载中……请稍候
+			</div>
+		</div>
+	</div>
+	<div id="actions" dojoType="TabContainer"
+		style="margin-left: 1%; width: 58%; height: 100%; position: relative; float: left; overflow:hidden">
+		<div id="trainingStat" dojoType="ContentPane" label="查看培训信息"
+			style="overflow: auto">
+			<div style="left:10px;top:10px;position:relative;width:90%">
+				<div id="trainingInfo">
+					<table border="0"
+						style="border-collapse: collapse; border: 0px solid #d8d8d8; width: 95%">
+						<tr>
+							<td style="width: 60px">
+								培训名称
+							</td>
+							<td>
+								<div id="trainingName"></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								培训时间
+							</td>
+							<td>
+								<span id="trainingStarttime"></span>-
+								<span id="trainingEndtime"></span>
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								培训内容
+							</td>
+							<td>
+								<div id="trainingDescription"></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+				<div id="applicants">
+				</div>
+			</div>
+		</div>
+		<div id="editOrDel" dojoType="ContentPane" label="修改刪除培訓"
+			style="overflow: auto">
+			<form id="trainingform" name="trainingform">
+				<table style="width: 100%">
+					<tr>
+						<td>
+							培训名称
+						</td>
+						<td>
+							<input name="name" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							岗位号
+						</td>
+						<td>
+							<input dojoType="ComboBox"
+								dataUrl="misc.do?method=getPostsCode&permissionMethodName=hasPostTrainingPermission"
+								id="postcode" name="postcode" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							需要申请
+						</td>
+						<td>
+							<select name="ispublic"
+								onchange="TrainingAdmin.setPubStatus(this.value)">
+								<option value="1">
+									是
+								</option>
+								<option value="0">
+									否
+								</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+							培训起始时间
+						</td>
+						<td>
+							<input id="startdate" dojoType="dropdowndatepicker"
+								saveFormat="yyyyMMdd" containerToggle="fade" lang="zh-tw" />
+							<input id="starttime" saveFormat="hh:mm:ss"
+								dojoType="dropdowntimepicker" displayFormat="hh:mm:ss"
+								containerToggle="fade" />
+							<input type="hidden" name="starttime" id="finalstarttime" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							培训结束时间
+						</td>
+						<td>
+							<input id="enddate" dojoType="dropdowndatepicker"
+								saveFormat="yyyyMMdd" containerToggle="fade" lang="zh-tw" />
+
+							<input id="endtime" saveFormat="hh:mm:ss"
+								dojoType="dropdowntimepicker" displayFormat="hh:mm:ss"
+								containerToggle="fade" />
+							<input type="hidden" name="endtime" id="finalendtime" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="deadline1">
+								培训申请结束时间
+							</div>
+						</td>
+						<td>
+							<div id="deadline2">
+								<input id="deadlinedate" dojoType="dropdowndatepicker"
+									saveFormat="yyyyMMdd" containerToggle="fade" lang="zh-tw" />
+								<input id="deadlinetime" saveFormat="hh:mm:ss"
+									dojoType="dropdowntimepicker" displayFormat="hh:mm:ss"
+									containerToggle="fade" />
+								<input type="hidden" name="deadline" id="finaldeadline" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							培训描述
+						</td>
+						<td>
+							<textarea name="description" id="description"></textarea>
+							<input type="hidden" name="id" id="id" />
+							<input type="hidden" name="posttime" id="posttime" />
+						</td>
+					</tr>
+				</table>
+				<input id="training-filelist" value="" type="hidden" name="filelist" />
+			</form>
+			<div id="fileuploads">
+				<div id="training-filelink">
+				</div>
+				<form id="training-upload-form" method="post" style="display: none"
+					enctype="multipart/form-data">
+					<input id="training-upload-file" name="training-upload-file"
+						onchange="TrainingAdmin.upload()" type="file" />
+					&nbsp;&nbsp;
+					<a href="javascript:TrainingAdmin.cancelUpload()">取消上传</a>
+				</form>
+				<a href="javascript:TrainingAdmin.startUploadFile()"
+					style="color:blue" id="startUploadFile">上传文件 </a>
+			</div>
+			<input type="button" value="修改培训!"
+				onclick="TrainingAdmin.editTraining()" />
+			<input type="button" value="刪除培训!"
+				onclick="TrainingAdmin.delTraining()" />
+		</div>
+		<div id="tokens" dojoType="ContentPane" label="密码条"
+			style="overflow: auto">
+			<div>请输入您要产生的密码条的个数：</div>
+			<input type="text" id="tokenCount" value="10" class="medium" value=""
+				dojoType="RegexpTextbox" regexp="^[1-9][0-9]{0,2}$" required="true"
+				invalidMessage="范围1-999" />
+			<input type="hidden" id="tokenId" />
+			<input type="button" onclick="TrainingAdmin.generateTokens()"
+				value="产生密码条" />
+			<pre id="token">
+			</pre>
+
+		</div>
+	</div>
+</div>
+<iframe id="downloadToken" style='display: none' src="" />

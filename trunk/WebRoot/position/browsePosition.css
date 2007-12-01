@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.posDetail {
+	border-left: 1px solid #cccccc;
+	height: 85%;
+	left: 500px;
+	overflow: auto;
+	padding: 10px;
+	position: absolute;
+	top: 33px;
+	width: 33%;
+	z-index:999;
+}
+
+.TreeContent {
+}

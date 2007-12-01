@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+.ApplyPosDetail {
+	border-left: 1px solid #cccccc;
+	height: 85%;
+	left: 500px;
+	overflow: auto;
+	padding: 10px;
+	position: absolute;
+	top: 33px;
+	width: 33%;
+	z-index: 999;
+}
+
+.applybuttondiv {
+	width: 120px;
+	height: 40px;
+	position: relative;
+}
+
+#reason {
+	height: 120px;
+	width: 270px;
+}

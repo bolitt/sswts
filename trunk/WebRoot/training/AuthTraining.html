@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="AuthTraining.css" />
+<script type="text/javascript" src="AuthTraining.js"></script>
+<div class="smallmain">
+	<div id="mainTabContainer" dojoType="TabContainer"
+		style="width: 100%; height: 100%; float: left;">
+		<div dojoType="ContentPane" label="需认证培训" style="overflow: auto">
+			<div id="needAuthDiv" style="padding: 10px">
+				加载中……请稍候
+			</div>
+			<div id="commitAuthArea" style="padding: 10px">
+				<div id="trainingname"></div>
+				<div>
+					请输入您得到的密码条
+				</div>
+				<div>
+					<input id="token" />
+				</div>
+				<div>
+					<input type="button" onclick="AuthTraining.commit()" value="提交" />
+				</div>
+
+			</div>
+		</div>
+		<div dojoType="ContentPane" label="曾参加培训" style="overflow: auto">
+			<div id="AuthedDiv" style="padding: 10px">
+				加载中……请稍候
+			</div>
+		</div>
+	</div>
+</div>

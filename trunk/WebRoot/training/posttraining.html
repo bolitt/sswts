@@ -1,0 +1,118 @@
+<link rel="stylesheet" type="text/css" href="posttraining.css" />
+<script type="text/javascript" src="posttraining.js"></script>
+<div class="smallmain">
+
+	<form id="Training">
+		<table width="601" border="0">
+			<tr>
+				<td width="34%">
+					培训名称
+				</td>
+				<td colspan="2">
+					<input name="name" style="width: 350px" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					岗位号
+				</td>
+				<td width="33%">
+					<input dojotype="ComboBox"
+						dataurl="misc.do?method=getPostsCode&amp;permissionMethodName=hasPostTrainingPermission"
+						id="postcode" name="postcode" />
+				</td>
+				<td width="33%">
+					<div style="text-align: right; float: left; width: 113px;">
+						需要申请
+					</div>
+					<select name="ispublic" onchange="PostTraining.setPubStatus(this.value)">
+						<option value="1">
+							是
+						</option>
+						<option value="0">
+							否
+						</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					培训起始日期
+				</td>
+				<td>
+					<input id="startdate" lang="zh-tw" dojotype="dropdowndatepicker"
+						saveformat="yyyyMMdd" containertoggle="fade" xml:lang="zh-tw" />
+				</td>
+				<td>
+					<input id="starttime" saveformat="hh:mm:ss"
+						dojotype="dropdowntimepicker" displayformat="hh:mm:ss"
+						containertoggle="fade" />
+					<input type="hidden" name="starttime" id="finalstarttime" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					培训结束时间
+				</td>
+				<td>
+					<input id="enddate" lang="zh-tw" dojotype="dropdowndatepicker"
+						saveformat="yyyyMMdd" containertoggle="fade" xml:lang="zh-tw" />
+				</td>
+				<td>
+					<input id="endtime" saveformat="hh:mm:ss"
+						dojotype="dropdowntimepicker" displayformat="hh:mm:ss"
+						containertoggle="fade" />
+					<input type="hidden" name="endtime" id="finalendtime" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="deadline1">
+						培训申请结束时间
+					</div>
+				</td>
+				<td>
+					<div id="deadline2">
+						<input id="deadlinedate" lang="zh-tw"
+							dojotype="dropdowndatepicker" saveformat="yyyyMMdd"
+							containertoggle="fade" xml:lang="zh-tw" />
+					</div>
+				</td>
+				<td>
+					<div id="deadline3">
+						<input id="deadlinetime" saveformat="hh:mm:ss"
+							dojotype="dropdowntimepicker" displayformat="hh:mm:ss"
+							containertoggle="fade" />
+						<input type="hidden" name="deadline" id="finaldeadline" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					培训描述
+				</td>
+				<td colspan="2">
+					<textarea style="width: 350px; height: 105px" name="description"></textarea>
+				</td>
+			</tr>
+		</table>
+		<input id="training-filelist" value="" type="hidden" name="filelist" />
+	</form>
+	<div id="fileuploads">
+		<div id="training-filelink">
+		</div>
+		<form id="training-upload-form" method="post" style="display: none"
+			enctype="multipart/form-data">
+			<input id="training-upload-file" name="training-upload-file"
+				onchange="PostTraining.upload()" type="file" />
+			&nbsp;&nbsp;
+			<a href="javascript:PostTraining.cancelUpload()">取消上传</a>
+		</form>
+		<a href="javascript:PostTraining.startUploadFile()" style="color:blue"
+			id="startUploadFile">上传文件 </a>
+	</div>
+	<div style="padding-top:10px">
+		<input type="button" value="提交培训!"
+			onclick="PostTraining.addNewTraining()" />
+	</div>
+</div>

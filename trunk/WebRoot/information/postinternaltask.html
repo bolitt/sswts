@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="postinternaltask.css" />
+<script type="text/javascript" src="postinternaltask.js"></script>
+<div class="smallmain">
+
+	<div id="trees"
+		style="width:60%;height:100%;overflow:auto;position:relative;float:left">
+	</div>
+	<div id="contents"
+		style="width:40%;height:100%;overflow:auto;position:relative;float:left">
+		<form id="PostInternalTaskForm">
+			<table style="width:99%">
+				<tr>
+					<td style="width:15%">
+						标题
+					</td>
+					<td>
+						<input name="title" style="width:94%" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						内容
+					</td>
+					<td>
+						<textarea name="content" style="width:94%;height:262px"></textarea>
+						<input type="hidden" id="lists" name="lists" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						岗位:
+					</td>
+					<td>
+						<input dojoType="ComboBox"
+							dataUrl="misc.do?method=getPostsCode&permissionMethodName=hasInternalInfoPostPermission"
+							id="postcode" name="postcode" style="width:88%" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" value="提交！" onclick="postInternalTask.addPubInformation()" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,317 @@
+<script type="text/javascript" src="modPosArch.js"></script>
+<link rel="stylesheet" type="text/css" href="modPosArch.css" />
+<div class="smallmain">
+	<div
+		style="float:left;width: 59%; height: 100%;left:0px;position:relative;overflow:auto">
+		修改岗位结构
+		<div id="PosTrees">
+			加载中
+		</div>
+	</div>
+
+
+
+	<div id="mainTabContainer" dojoType="TabContainer"
+		style="width: 40%; height: 100% ;right:0px;position:relative">
+		<div dojoType="ContentPane" label="Add" style="overflow:auto">
+			<div name="add" id="Addcate" style="padding:10px;">
+				<div>
+					添加一级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Addcatecode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Addcatename" />
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Addcatedescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.addCate()"
+						style="top:10px;position:relative" value="添加！">
+				</div>
+			</div>
+			<div name="add" id="Addorg" style="display:none;padding:10px">
+				<div>
+					添加二级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Addorgcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Addorgname">
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Addorgdescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.addOrg()"
+						style="top:10px;position:relative" value="添加！">
+				</div>
+			</div>
+			<div name="add" id="Adddept" style="display:none;padding:10px">
+				<div>
+					添加三级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Adddeptcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Adddeptname">
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Adddeptdescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.addDept()"
+						style="top:10px;position:relative" value="添加！">
+				</div>
+			</div>
+			<div name="add" id="Addpost" style="display:none;padding:10px">
+				<div>
+					添加岗位
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Addpostcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字
+					<input type="text" id="Addpostname">
+				</div>
+				<div>
+					描述
+					<input type="text" id="Addpostdescription">
+				</div>
+				<div>
+					权重
+					<input type="text" id="Addpostweight">
+				</div>
+				<div>
+					系数
+					<input type="text" id="Addpostcoefficient">
+				</div>
+				<div>
+					需求
+					<input type="text" id="Addpostpos_req">
+				</div>
+				<div>
+					能力1：
+					<input type="text" id="Addpostability1">
+				</div>
+				<div>
+					能力2：
+					<input type="text" id="Addpostability2">
+				</div>
+				<div>
+					能力3：
+					<input type="text" id="Addpostability3">
+				</div>
+				<div>
+					能力4：
+					<input type="text" id="Addpostability4">
+				</div>
+				<div>
+					能力5：
+					<input type="text" id="Addpostability5">
+				</div>
+				<div>
+					能力6：
+					<input type="text" id="Addpostability6">
+				</div>
+				<div>
+					岗位负担：
+					<input type="text" id="Addpostpos_cost">
+				</div>
+				<div>
+					相关岗位：
+					<input type="text" id="Addpostrelatedpos">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.addPost()"
+						style="top:10px;position:relative" value="添加！">
+				</div>
+			</div>
+		</div>
+		<div dojoType="ContentPane" label="Edit" style="overflow:auto">
+			<div name="edit" id="Editcate" style="padding:10px">
+				<div>
+					修改一级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Editcatecode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Editcatename">
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Editcatedescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.editCate()"
+						style="top:10px;position:relative" value="修改！">
+				</div>
+			</div>
+			<div name="edit" id="Editorg" style="display:none;padding:10px">
+				<div>
+					修改二级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Editorgcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Editorgname">
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Editorgdescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.editOrg()"
+						style="top:10px;position:relative" value="修改！">
+				</div>
+			</div>
+			<div name="edit" id="Editdept" style="display:none;padding:10px">
+				<div>
+					修改三级节点
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Editdeptcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字：
+					<input type="text" id="Editdeptname">
+				</div>
+				<div>
+					描述：
+					<input type="text" id="Editdeptdescription">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.editDept()"
+						style="top:10px;position:relative" value="修改！">
+				</div>
+			</div>
+			<div name="edit" id="Editpost" style="display:none;padding:10px">
+				<div>
+					修改岗位
+				</div>
+				<div>
+					编码：
+					<input type="text" id="Editpostcode" force="true"
+						dojoType="RegexpTextbox" regexp="^[0-9+-]{1,3}$" required="true" />
+				</div>
+				<div>
+					名字
+					<input type="text" id="Editpostname">
+				</div>
+				<div>
+					描述
+					<input type="text" id="Editpostdescription">
+				</div>
+				<div>
+					权重
+					<input type="text" id="Editpostweight">
+				</div>
+				<div>
+					系数
+					<input type="text" id="Editpostcoefficient">
+				</div>
+				<div>
+					需求
+					<input type="text" id="Editpostpos_req">
+				</div>
+				<div>
+					能力1：
+					<input type="text" id="Editpostability1">
+				</div>
+				<div>
+					能力2：
+					<input type="text" id="Editpostability2">
+				</div>
+				<div>
+					能力3：
+					<input type="text" id="Editpostability3">
+				</div>
+				<div>
+					能力4：
+					<input type="text" id="Editpostability4">
+				</div>
+				<div>
+					能力5：
+					<input type="text" id="Editpostability5">
+				</div>
+				<div>
+					能力6：
+					<input type="text" id="Editpostability6">
+				</div>
+				<div>
+					岗位负担：
+					<input type="text" id="Editpostpos_cost">
+				</div>
+				<div>
+					相关岗位：
+					<input type="text" id="Editpostrelatedpos">
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.editPost()"
+						style="top:10px;position:relative" value="修改！">
+				</div>
+			</div>
+		</div>
+		<div dojoType="ContentPane" label="Delete" style="overflow:auto">
+			<div name="del" id="Delcate" style="padding:10px">
+				<div>
+					删除一级节点
+				</div>
+				<div>
+					<input type="button" onclick="ModifyPositionArch.delNode()"
+						style="top:10px;position:relative" value="删除!">
+				</div>
+			</div>
+			<div name="del" id="Delorg" style="display:none;padding:10px">
+				删除二级节点
+				<div>
+					<input type="button" onclick="ModifyPositionArch.delNode()"
+						style="top:10px;position:relative" value="删除!">
+				</div>
+			</div>
+			<div name="del" id="Deldept" style="display:none;padding:10px">
+				删除三级节点
+				<div>
+					<input type="button" onclick="ModifyPositionArch.delNode()"
+						style="top:10px;position:relative" value="删除!">
+				</div>
+			</div>
+			<div name="del" id="Delpost" style="display:none;padding:10px">
+				删除岗位
+				<div>
+					<input type="button" onclick="ModifyPositionArch.delNode()"
+						style="top:10px;position:relative" value="删除!">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

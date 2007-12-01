@@ -1,0 +1,131 @@
+<link rel="stylesheet" type="text/css" href="userinfo.css" />
+<script type="text/javascript" src="userinfo.js"></script>
+<div
+	style="border: 30px solid #e5e5e5;width: 770px;height: 386px;background-color:#e5e5e5">
+	<div class="leftUserinfo">
+		<table border="0" id="userinfo">
+			<tbody>
+				<tr>
+					<td>
+						姓 名
+					</td>
+					<td>
+						<div id="name"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						入学年份
+					</td>
+					<td>
+						<div id="grade"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						性 别
+					</td>
+					<td>
+						<div id="gender"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						国 家
+					</td>
+					<td>
+						<div id="region"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						民 族
+					</td>
+					<td>
+						<div id="nation"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						系 别
+					</td>
+					<td>
+						<div id="department"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						班 号
+					</td>
+					<td>
+						<div id="classnum"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						政治面貌
+					</td>
+					<td>
+						<div id="political"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="rightUserinfo">
+		<table border="0" id="userinfo_editable">
+			<tbody>
+				<tr>
+					<td>
+						固定电话
+					</td>
+					<td>
+						<input type="text" name="userinfo-tel" id="userinfo-tel"
+							class="medium" value="" dojoType="RegexpTextbox"
+							regexp="^[0-9+-]+$" required="true"
+							invalidMessage="可接受的字符为数字、-、+" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						手 机
+					</td>
+					<td>
+						<input type="text" name="userinfo-mobile" id="userinfo-mobile"
+							class="medium" value="" dojoType="RegexpTextbox"
+							regexp="^[0-9+-]+$" required="true"
+							invalidMessage="可接受的字符为数字、-、+" />
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						电子邮件
+					</td>
+					<td>
+						<input type="text" name="userinfo-email" id="userinfo-email"
+							class="long" value="fred&barney@stonehenge.com"
+							dojoType="EmailTextbox" trim="true" required="true"
+							invalidMessage="Invalid Email Address." />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						地 址
+					</td>
+					<td>
+						<input type="text" name="userinfo-address" id="userinfo-address"
+							class="medium" dojoType="ValidationTextbox" lowercase="true"
+							required="true" missingMessage="*" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="width: 241px;">
+			<input type="button" value="保存"
+				onclick="userInfo.submitUserinfoChange()"
+				style="float:right;right:10px;position:relative" />
+		</div>
+	</div>
+	<span id="changeUserinfoResult"></span>
+</div>

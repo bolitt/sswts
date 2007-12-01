@@ -1,0 +1,31 @@
+.big{
+	height:100%;
+	width:100%;
+	top: 60px;
+	position: relative
+}
+.middle{
+width:533px;
+height:409px;
+margin: auto
+}
+
+.input{
+height:16px;
+width:87px;
+padding:0;
+background-color:#dedede;
+border:1;
+border-color:#7b7b7b;
+border-width:1px;
+
+}#username{
+position:relative;
+left:151px;
+top:-43px;
+}
+#password{
+position:relative;
+left:194px;
+top:-43px;
+}

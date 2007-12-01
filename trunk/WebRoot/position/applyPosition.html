@@ -1,0 +1,85 @@
+<link rel="stylesheet" type="text/css" href="applyposition.css" />
+<script type="text/javascript" src="applyposition.js"></script>
+<div class="smallmain">
+	<div id="mainTabContainer" dojoType="TabContainer"
+		style="width: 100%; height: 100%; float: left;z-index:1;position:absolute">
+		<div dojoType="ContentPane" label="校级岗位" style="overflow: auto">
+			<div id="SchoolPos"  style="padding: 10px">
+				加载中……请稍候
+			</div>
+		</div>
+		<div dojoType="ContentPane" label="系级岗位" style="overflow: auto">
+			<div id="DeptPos"  style="padding: 10px">
+				加载中……请稍候
+			</div>
+		</div>
+		<div dojoType="ContentPane" label="协会岗位" style="overflow: auto">
+			<div id="OrgsPos"  style="padding: 10px">
+				加载中……请稍候
+			</div>
+		</div>
+	</div>
+	<div class="ApplyPosDetail">
+		<div id="posDetail">
+			<table border="0"
+				style="border-collapse: collapse; border: 0px solid #d8d8d8; width: 100%">
+				<tr>
+					<td style="width: 60px">
+						岗位名称
+					</td>
+					<td>
+						<div id="fullname"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						岗位描述
+					</td>
+					<td>
+						<div id="pos_Descrip"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						岗位需求
+					</td>
+					<td>
+						<div id="pos_require"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						能力量值
+					</td>
+					<td>
+						<div id="pos_ability1"></div>
+						<div id="pos_ability2"></div>
+						<div id="pos_ability3"></div>
+						<div id="pos_ability4"></div>
+						<div id="pos_ability5"></div>
+						<div id="pos_ability6"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						岗位消耗
+					</td>
+					<td>
+						<div id="pos_cost"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						相关岗位
+					</td>
+					<td>
+						<div id="pos_relate"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="applyDiv">
+		</div>
+
+	</div>
+</div>

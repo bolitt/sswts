@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>清华大学社会工作管理系统</title>
+		<script type="text/javascript" src="cookies.js"></script>
+		<script type="text/javascript" src="login.js"></script>
+		<link rel="stylesheet" type="text/css" href="login.css" />
+	</head>
+
+	<body onload="setStyle()">
+		<div class="big">
+			<div class="middle">
+				<form id="login" method="post" action="login.do">
+					<img src="images/login/background.jpg" alt="background" border="0"
+						usemap="#Map" />
+					<map name="Map" id="Map">
+						<area shape="rect" coords="394,370,431,390"
+							href="javascript:doLogin()" />
+						<area shape="rect" coords="443,371,491,389"
+							href="javascript:Register()" />
+					</map>
+					<input class="input" type="text" id="username" name="studentnum" />
+					<input class="input" type="password" id="password" name="password" />
+					<input type="submit" style="display:none" />
+				</form>
+			</div>
+			<div id="console" style="width:500px;margin:auto"></div>
+		</div>
+	</body>
+</html>
