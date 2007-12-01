@@ -1,0 +1,25 @@
+table#userinfo {
+	
+}
+
+.leftUserinfo {
+	float: left;
+	position: relative;
+}
+
+.rightUserinfo {
+	float: left;
+	left: 74px;
+	position: relative;
+	width: 401px;
+}
+
+#userinfo td,#userinfo_editable td{
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.passwordInput {
+	width: 135px;
+}

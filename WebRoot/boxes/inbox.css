@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+.readRow {
+	font-weight: normal;
+	padding : 0px;
+	margin: 0px;
+}
+
+.notReadRow {
+	font-weight: bold;
+	padding : 0px;
+	margin: 0px;
+}
+
+.paging {
+	/*border: 1px solid;*/
+	position: relative;
+	text-align: right;
+	float: right
+}
+
+.delButton {
+	position: relative;
+	text-align: left;
+	float: left
+}
+
+.inboxTable {
+/*	border: 1px solid #E5E5E5;
+	border-collapse: collapse;
+	*/
+	width: 70%;
+	top : 10px;
+	position : relative
+}

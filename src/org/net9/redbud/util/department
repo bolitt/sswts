@@ -1,0 +1,172 @@
+000 建筑学院 jzxy 建筑学院 School of Architecture
+001 城规系 cgx 城市规划系 Department of Urban Planning & Design
+002 建筑系 jzx 建筑系 Department of Architecture
+003 土木系 tmx 土木工程系 Department of Civil Engineering
+004 水利系 slx 水利水电工程系 Department of Hydraulic Engineering
+005 环境系 hjx 环境科学与工程系 Department of Environmental Science and Engineering
+011 机械学院 jxxy 机械工程学院 School of Mechanical Engineering
+012 机械系 jxx 机械工程系 Department of Mechanical Engineering
+013 精仪系 jyx 精密仪器与机械学系 Department of Precision Instruments and Mechanology
+014 热能系 rnx 热能工程系 Department of Thermal Engineering
+015 汽车系 qcx 汽车工程系 Department of Automotive Engineering
+016 工业工程系 gygcx 工业工程系 Department of Industrial Engineering
+021 信息学院 xxxy 信息科学技术学院 School of Information Science and Technology
+022 电机系 djx 电机工程与应用电子技术 Department of Electrical Engineering
+023 电子系 dzx 电子工程系 Department of Electronic Engineering
+024 计算机系 jsjx 计算机科学与技术系 Department of Computer Science and Technology
+025 自动化系 zdhx 自动化系 Department of Automation
+026 微纳电子系 wndzx 微电子与纳电子学系 Department of Microelectronics and Nanoelectronics
+031 航院 hy 航天航空学院 School of Aerospace
+032 工物系 gwx 工程物理系 Department of Engineering Physics
+033 力学系 lxx 工程力学系 Department of Engineering Mechanics
+034 化工系 hgx 化学工程系 Department of Chemical Engineering
+035 材料系 clx 材料科学与工程系 Department of Materials Science and Engineering
+041 理学院 lxy 理学院 School of Sciences
+042 数学系 sxx 数学科学系 Department of Mathematical Sciences
+043 物理系 wlx 物理系 Department of Physics
+044 化学系 hxx 化学系 Department of Chemistry
+045 生物系 swx 生物科学与技术系 Department of Biological Sciences and Biotechnology
+048 高研中心 gyzx 高等研究中心 
+049 周培源数学中心 周培源应用数学研究中心 Zhou Peiyuan Center for Applied Mathematics
+051 经管学院 jgxy 经济管理学院 School of Economics and Management
+052 管理系 glx 管理科学与工程系 Department of Management Science and Engineering
+053  企业管理系(已撤销) Department of Business Administration.
+054 经济系 jjx 经济系 Department of Economics
+055 金融系 jrx 经济管理学院金融系 FINA Department of Finance, School of Economics and Management, Tsinghua University
+056 会计系 kjx 会计系 Department of Accounting
+057 技术经济系 jsjjx 技术经济与管理系 Department of Economics and Management of Technology
+059 公管学院 ggxy 公共管理学院 School of Public Policy and Management
+061 人文社科学院 rwxy 人文社会科学学院 School of Humanities and Social Sciences
+062 哲学系 zxx 哲学与社会学系 Department of Philosophy and Sociology
+063 中文系 zwx 中国语言文学系 Department of Chinese Language and Literature
+064 外语系 wyx 外语系 Department of Foreign Languages
+065 历史系 lsx 历史系 Department of History
+066 法学院 fxy 法学院 School of Law
+067 新闻学院 cbxy 新闻与传播学院 School
+072 体育部 tyb 体育教研部 
+073 电教中心 djzx 电化教育中心 
+074 计算中心 jszx 计算机与信息管理中心 
+075 图书馆 tsg 图书馆 
+076 软件中心 rjzx 软件技术中心 
+077 分析中心 fxzx 分析中心 
+078 艺教中心 yjzx 艺术教育中心 
+080 美术学院 msxy 美术学院 Academy of Arts & Design
+090 土水学院 tsxy 土木水利学院 School of Civil Engineering
+091 建管系 jgx 建设管理系 Department of Construction Management
+098 景观学系 jgxx 景观学系 Department of Landscape Architecture
+099 建筑技术 jjx 建筑技术科学系 Department of Building Science
+101 核研院 hyy （核能技术设计研究院） Institute of Nuclear Energy Technology
+101 核研院 hyy 核能与新能源技术研究院 Institute of Nuclear and New Energy Technology
+102 微电子所 wdzs 微电子学研究所 Institute of Microelectronics
+103 教研所 jys 教育研究所 
+104 文研所 wys 思想文化研究所 
+105 学报部 xbb 学报编辑部 
+106 马研中心 myzx 马克思主义研究中心 Marxism Study Center
+111  已撤销(生命科学与工程研究院） 
+112 网络中心 wlzx 信息网络工程研究中心 
+113 水电设计 水利水电设计研究院 
+114 宇航中心 yhzx 宇航技术研究中心 Tsinghua Space Center
+121 发展研院 fzyy 21世纪发展研究院 
+132 企业战略系 qyzlx 经济管理学院企业战略与政策系 Department of Business Strategy and Policy，School of Economics and Management
+133 人力资源系 rlzyx 经济管理学院人力资源与组织行为系 Department of Human Resources and Organizational Behavior，School of Economics and Management
+134 营销系 yxx 经济管理学院市场营销系 Department of Marketing，School of Economics and Management
+150 训练中心 xlzx 基础工业训练中心 Fundamental Industry Training Center of Tsinghua University
+152  撤销（原设备仪器厂） 
+153  撤销（原印刷厂） 
+154 电工厂 dgc 电工厂(原风光厂已解散) 
+155 电工电子中心 dgdzzx 电工电子学教学实验中心 
+202 党办 db 党委办公室 
+203 纪检委 jjw 纪律检查委员会 
+204 组织部 zzb 党委组织部 
+205 宣传部 xcb 党委宣传部 
+206 统战部 tzb 党委统战部 
+207 学生部 xsb 党委学生部 
+208 保卫部 bwb 党委保卫部 
+209 武装部 wzb 党委武装部 
+210 工会 gh 工会 
+211 团委 tw 团委会 
+252 党办校办 dbxb 党办校办 
+253 国际合作 gjc 国际合作与交流处 
+254 教务处 jwc 教务处 
+255 研究生院 yjsy 研究生院 
+256 继教学院 jxy 继续教育学院 
+257 科研院 kyc 科研院 
+258 开发部 kfb 科技开发部 
+259 人事处 rsc 人事处 
+260 离退休处 ltxc 离退休工作处 
+261 总务办 zwb 总务长办公室 
+262 财务处 cwc 财务处 
+263 审计室 sjs 审计室 
+264 实验室处 sysc 实验室与设备处 
+265 生产处 scc 生产处 
+266  撤销（原行政事务处） 
+267 饮食中心 yszx 饮食中心 
+268 基建处 jjc 基建处 
+269 修缮中心 xszx 修缮校园管理中心 
+270 设计院 sjy 建筑设计研究院 
+271 档案馆 dag 档案馆 
+272 劳服办 lfb 劳动服务管理办公室 
+273 监委 jw 监察工作委员会 
+274 信息中心 xxzx 撤销（原管理信息中心） 
+275 房管处 fgc 房地产管理处 
+276 基金会 jjh 教育基金会 
+277 企合委 qhw 大学与企业合作委员会 
+278 对外学术 dwxs 对外学术文化交流中心 
+280 接待中心 jdzx 接待服务中心 
+281 学服中心 xfzx 学生社区服务中心 
+282 文科处 wkc 文科建设处 Social Science Administration Office
+283 教培处 jpc 教育培训管理处 
+285 经资办 jzb 经营性资产管理办公室 
+286 核算中心 hszx 会计核算中心 Accounting Center
+287 后勤核算中心 hqhszx 后勤会计核算中心 
+288 校友会 xyh 校友联络总会 
+290 技术学院 jsxy 应用技术学院 School of Applied Science and Technology
+291  深圳研究生院 
+302 街道办 jdb 街道办事处 
+303 出版社 cbs 出版社 
+304 技术公司 jsgs 信息技术公司 
+305 校医院 xyy 清华大学医院 
+306 附中 fz 附中 
+307 二附中 efz 第二附中 
+308 附小 fx 附小 
+309 派出所 pcs 治安派出所 
+310  撤销（原风光仪器厂） 
+311 金属工学 jsgx 金属工艺学教研室 
+312 接待部 jdb 接待服务部 
+313 后勤处 hqc 后勤管理处 
+314 联合办 lhb 服务经营实体联合办公室 
+315 物业中心 wyzx 紫荆物业中心 
+316 配送中心 pszx 配送中心 
+317 正大公司 zdgs 正大公司 
+318 幼儿园 yey 幼儿园 
+321 美院企管 myqg 企业集团美术学院企业管理办 
+322 美院后勤 myhq 美术学院校区后勤办公室 
+352 清华控股 qhkg 清华控股有限公司 
+353 紫光集团 zgjt 清华紫光集团 
+355 土建公司 tjgs 土建承包公司 
+356 工程部 gcb 修建工程技术管理部 
+357 科技园 kjy 清华科技园发展中心 
+358 通力公司 tlgs 清华通力机电设备公司 
+359 同方公司 tfgs 清华同方实业总公司 
+360 诚志股份 czgf 诚志股份有限公司 Chengzhi Shareholding Co.,Ltd
+370 北区办 bqb 北区校园建设办公室 
+371 绿办 lb 绿色大学办公室 
+400 医学院 yxy 医学院 School of Medicine
+401 医学系 yxx 医学系 Department of Medical Science
+402 药学系 yxx 药学系 Department of Pharmaceutical Science
+403 生医系 syx 生物医学工程系 Department of Biomedical Engineering
+408 第一附属医院 华信医院（第一附属医院） 
+409 第二附属医院 玉泉医院（第二附属医院） 
+410 软件学院 rjxy 软件学院 School of Software
+411 临床医院 lcyy 临床医院 
+500 医研院 yyy 生命科学与医学研究院 Institute of Biomedicine
+835 人才中心 rczx 人才交流中心 
+901 开发研究 kfyj 北京清华工业开发研究院 
+902 深研院 syy 深圳清华大学研究院 
+903 学位中心 xwzx 学位与研究生教育发展中心 
+904 汽车院 qcy 清华汽车工程开发研究院 
+908 浙江研究院 zjyjy 浙江清华长三角研究院 yangtse Delta Region Institute of Tsinghua University，Zhejiang
+909 河北院 hby 河北清华发展研究院 
+915 信研院 xyy 信息技术研究院 
+916 清华信息科学与技术国家实验室 Tsinghua National Laboratory of Information Science and Technology
+999 所有系 syxs 所有系所显示 

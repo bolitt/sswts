@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.trainingDetail {
+	width: 40%;
+	height: 400px;
+	position: absolute;
+	left: 60%;
+	top: 0px;
+	border: dotted;
+	overflow: scroll;
+}
+
+.applybuttondiv {
+	width: 120px;
+	height: 40px;
+	position: relative;
+}
+
+#explode1 {
+	position: relative;
+	left: 200px;
+	top: 100px;
+	background: #ddd;
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	display: none;
+}

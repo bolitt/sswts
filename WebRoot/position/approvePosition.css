@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.label  , .content {
+	width: 100%;
+}
+
+.label {
+	cursor: pointer;
+	background: #d8d8d8;
+	height: 20px;
+	/*border-top: 1px solid black;*/
+	
+	border-bottom: 1px solid white;
+}
+
+.content {
+	background: #eeeeee;
+	border-top: 1px solid #eeeeee;
+	/* w/out this, an <h1> on the top line causes a gap between the .content and .label */
+}
+
+
+#applyingPosContainer {
+	float: left;
+	position: relative
+}
+
+#applyingPosContainer {
+	border-right:1px solid #B3B3B3;
+	float:left;
+	padding-right:4%;
+	position:relative;
+	width:55%;
+	height: 100%;
+	overflow: auto;
+
+}
+
+#detailsContainer {
+	position: relative;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	width: 38%;
+	overflow: auto;
+	overflow-x:hidden;
+	margin-left : 10px;
+}

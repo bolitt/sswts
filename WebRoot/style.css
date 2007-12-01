@@ -1,0 +1,211 @@
+body {
+	background: white;
+}
+
+#outer {
+	border-left: 1px solid #B2B2B2;
+	border-right: 1px solid #B2B2B2;
+	height: 714px;
+	margin: auto;
+	width: 990px;
+}
+
+.logo {
+	border-top: 1px solid #B2B2B2;
+	height: 120px;
+	margin: auto;
+	position: relative;
+	top: 0px;
+	width: 990px;
+}
+
+.title {
+	background: transparent url(images/main/head.jpg) no-repeat scroll left
+		top;
+	height: 27px;
+	margin: auto;
+	position: relative;
+	top: 0px;
+	width: 990px;
+}
+
+.welcome {
+	float: left;
+	font-size: 12px;
+	height: 16px;
+	left: 0px;
+	position: relative;
+	text-align: center;
+	top: 15px;
+	width: 180px;
+}
+
+.inbox {
+	color: black;
+	cursor: pointer;
+	float: left;
+	font-size: 12px;
+	height: 14px;
+	left: 450px;
+	position: relative;
+	top: 8px;
+	width: 180px;
+}
+
+a#inbox {
+	color: black;
+	text-decoration: none;
+}
+
+.logout {
+	color: black;
+	cursor: pointer;
+	float: left;
+	font-size: 12px;
+	height: 14px;
+	left: 415px;
+	position: relative;
+	top: 8px;
+	width: 52px;
+}
+
+.aboutUs {
+	color: black;
+	cursor: pointer;
+	float: left;
+	font-size: 12px;
+	height: 14px;
+	left: 431px;
+	position: relative;
+	top: 8px;
+	width: 52px;
+}
+
+.left {
+	float: left;
+	height: 325px;
+	left: 0px;
+	margin-top: 28px;
+	position: relative;
+	width: 159px;
+}
+
+.leftButton {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.main {
+	float: left;
+	font-size: 12px;
+	height: 446px;
+	left: 0px;
+	position: relative;
+	top: 1px;
+	width: 830px;
+}
+
+.bigmain {
+	height: 386px;
+	left: 30px;
+	overflow: auto;
+	position: relative;
+	top: 30px;
+	width: 770px;
+}
+
+.smallmain {
+	height: 426px;
+	left: 10px;
+	overflow: auto;
+	position: relative;
+	top: 10px;
+	width: 810px;
+}
+
+.accordionlabel {
+	background: white none repeat scroll 0%;
+	border-bottom: 0px none;
+	border-top: 0px none;
+	cursor: pointer;
+	height: 35px;
+}
+
+.accordioncontent {
+	background: #EEEEEE none repeat scroll 0%;
+	border-top: 0px none;
+}
+
+.dojoDialog {
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	background: #CCDDEE none repeat scroll 0%;
+	border: 1px solid #999999;
+	padding: 4px;
+}
+
+.item {
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.darkitem {
+	color: grey;
+	cursor: not-allowed;
+	text-decoration: none;
+}
+
+.item_selected {
+	color: red;
+}
+
+.dark_item {
+	color: grey;
+}
+
+li {
+	list-style-type: square;
+}
+
+.mytable {
+	border: 1px solid #E5E5E5;
+	border-collapse: collapse;
+}
+
+input1 {
+	border: 1px solid #C3C3C3;
+}
+
+textarea {
+	border: 1px solid #C3C3C3;
+}
+
+.bottom {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+}
+
+table {
+	padding: 0px;
+	margin: 0px;
+}
+
+tr {
+	padding: 0px;
+	margin: 0px;
+}
+
+td {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	color: black
+}

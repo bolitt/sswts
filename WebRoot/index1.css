@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+#userinfo {
+	font-size: 12px;
+	height: 170px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 117px;
+	width: 180px;
+}
+
+#photo {
+	background-color: gray;
+	border: 1px solid #FFFFFF;
+	height: 64px;
+	left: 55px;
+	position: absolute;
+	top: 35px;
+	width: 64px;
+}
+
+#abilities {
+	height: 260px;
+	left: 180px;
+	opacity: 0;
+	position: absolute;
+	top: 14px;
+	width: 365px;
+}
+
+#name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.seperator {
+	left: 13px;
+	position: absolute;
+	top: 276px;
+}
+
+.seperator1 {
+	position: absolute;
+	top: 272px;
+}
+
+.a1 {
+	left: 22px;
+	position: absolute;
+	top: 35px;
+}
+
+.a2 {
+	left: 22px;
+	position: absolute;
+	top: 61px;
+}
+
+.a3 {
+	left: 22px;
+	position: absolute;
+	top: 87px;
+}
+
+.a4 {
+	left: 22px;
+	position: absolute;
+	top: 134px;
+}
+
+.a5 {
+	left: 22px;
+	position: absolute;
+	top: 160px;
+}
+
+.a6 {
+	left: 22px;
+	position: absolute;
+	top: 186px;
+}
+
+.abilities_middle {
+	float: left;
+	height: 5px;
+	width: 1px;
+}
+
+.cP {
+	font-weight: bold;
+	left: 20px;
+	position: absolute;
+	top: 260px;
+}
+
+.hP {
+	font-weight: bold;
+	left: 280px;
+	position: absolute;
+	top: 260px;
+}
+
+#currentPos {
+	left: 29px;
+	position: absolute;
+	top: 290px;
+	height: 140px;
+	overflow: auto;
+	padding-left: 20px;
+	margin: 0px;
+}
+
+#historicalPos {
+	left: 288px;
+	position: absolute;
+	top: 290px;
+	height: 140px;
+	overflow: auto;
+	padding-left: 20px;
+	margin: 0px;
+}

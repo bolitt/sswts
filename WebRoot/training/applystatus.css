@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.applyStatusTable{
+	border-collapse : collapse;
+	background-color : #D8D8D8;
+	width : 97%;
+	border : 1px solid white;
+}

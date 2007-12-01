@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="methodNameResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName">
+			<value>method</value>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://denniszz.6600.org:3306/sswts1</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>mysql</value>
+		</property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>
+					org/net9/redbud/storage/hibernate/apply/Apply.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/userinfo/Userinfo.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/login/Login.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/posrecord/Posrecord.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/posts/Posts.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/depts/Depts.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/organs/Organs.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/category/Category.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/training/Training.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/trainrecord/Trainrecord.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/tokencontainer/Tokencontainer.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/applytraining/Applytrainging.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/publicinfologin/Publicinfologin.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/publicinfo/Publicinfo.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/internalinfo/Internalinfo.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/internalinfologin/Internalinfologin.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/internaltask/Internaltask.hbm.xml
+				</value>
+				<value>
+					org/net9/redbud/storage/hibernate/internaltasklogin/Internaltasklogin.hbm.xml
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="DataCenter" class="org.net9.redbud.util.DataCenter">
+		<property name="applyDAO">
+			<ref bean="ApplyDAO" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="categoryDAO">
+			<ref bean="CategoryDAO" />
+		</property>
+		<property name="organsDAO">
+			<ref bean="OrgansDAO" />
+		</property>
+		<property name="deptsDAO">
+			<ref bean="DeptsDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- set the max upload size100MB -->
+		<property name="maxUploadSize">
+			<value>104857600</value>
+		</property>
+		<property name="maxInMemorySize">
+			<value>4096</value>
+		</property>
+	</bean>
+
+	<bean id="UserinfoController"
+		class="org.net9.redbud.web.controller.UserinfoController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="userinfoDAO">
+			<ref bean="UserinfoDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+	</bean>
+
+	<bean id="MiscController"
+		class="org.net9.redbud.web.controller.MiscController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="posrecordDAO">
+			<ref bean="PosrecordDAO" />
+		</property>
+	</bean>
+
+	<bean id="PositionController"
+		class="org.net9.redbud.web.controller.PositionController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="posrecordDAO">
+			<ref bean="PosrecordDAO" />
+		</property>
+		<property name="categoryDAO">
+			<ref bean="CategoryDAO" />
+		</property>
+		<property name="applyDAO">
+			<ref bean="ApplyDAO" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="deptsDAO">
+			<ref bean="DeptsDAO" />
+		</property>
+		<property name="organsDAO">
+			<ref bean="OrgansDAO" />
+		</property>
+		<property name="dataCenter">
+			<ref bean="DataCenter" />
+		</property>
+	</bean>
+
+	<bean id="TrainingController"
+		class="org.net9.redbud.web.controller.TrainingController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="trainingDAO">
+			<ref bean="TrainingDAO" />
+		</property>
+		<property name="applytrainingDAO">
+			<ref bean="ApplytraingingDAO" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="userinfoDAO">
+			<ref bean="UserinfoDAO" />
+		</property>
+		<property name="trainrecordDAO">
+			<ref bean="TrainrecordDAO" />
+		</property>
+		<property name="tokencontainerDAO">
+			<ref bean="TokencontainerDAO" />
+		</property>
+	</bean>
+
+	<bean id="InfoPublishController"
+		class="org.net9.redbud.web.controller.InfoPublishController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="publicinfoDAO">
+			<ref bean="PublicinfoDAO" />
+		</property>
+		<property name="publicinfologinDAO">
+			<ref bean="PublicinfologinDAO" />
+		</property>
+		<property name="internalinfoDAO">
+			<ref bean="InternalinfoDAO" />
+		</property>
+		<property name="internalinfologinDAO">
+			<ref bean="InternalinfologinDAO" />
+		</property>
+		<property name="internaltaskDAO">
+			<ref bean="InternaltaskDAO" />
+		</property>
+		<property name="internaltaskloginDAO">
+			<ref bean="InternaltaskloginDAO" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="categoryDAO">
+			<ref bean="CategoryDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="dataCenter">
+			<ref bean="DataCenter" />
+		</property>
+	</bean>
+
+	<bean id="StaffCheckController"
+		class="org.net9.redbud.web.controller.StaffCheckController">
+	</bean>
+
+	<bean id="InfoStatController"
+		class="org.net9.redbud.web.controller.InfoStatController">
+	</bean>
+
+	<bean id="SettingsController"
+		class="org.net9.redbud.web.controller.SettingsController">
+		<property name="methodNameResolver">
+			<ref bean="methodNameResolver" />
+		</property>
+		<property name="categoryDAO">
+			<ref bean="CategoryDAO" />
+		</property>
+		<property name="organsDAO">
+			<ref bean="OrgansDAO" />
+		</property>
+		<property name="deptsDAO">
+			<ref bean="DeptsDAO" />
+		</property>
+		<property name="postsDAO">
+			<ref bean="PostsDAO" />
+		</property>
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="posrecordDAO">
+			<ref bean="PosrecordDAO" />
+		</property>
+		<property name="dataCenter">
+			<ref bean="DataCenter" />
+		</property>
+	</bean>
+
+	<bean id="LogoutController"
+		class="org.net9.redbud.web.controller.LogoutController">
+	</bean>
+
+	<bean id="LoginController"
+		class="org.net9.redbud.web.controller.LoginController">
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="commandClass">
+			<value>
+				org.net9.redbud.web.commandclass.LoginCommandClass
+			</value>
+		</property>
+	</bean>
+	<bean id="NewLoginController"
+		class="org.net9.redbud.web.controller.NewLoginController">
+		<property name="loginDAO">
+			<ref bean="LoginDAO" />
+		</property>
+		<property name="userinfoDAO">
+			<ref bean="UserinfoDAO" />
+		</property>
+	</bean>
+
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="userinfo.do">UserinfoController</prop>
+				<prop key="position.do">PositionController</prop>
+				<prop key="training.do">TrainingController</prop>
+				<prop key="pubinfo.do">InfoPublishController</prop>
+				<prop key="stackcheck.do">StaffCheckController</prop>
+				<prop key="infostat.do">InfoStatController</prop>
+				<prop key="settings.do">SettingsController</prop>
+				<prop key="login.do">LoginController</prop>
+				<prop key="logout.do">LogoutController</prop>
+				<prop key="misc.do">MiscController</prop>
+				<prop key="newlogin.do">NewLoginController</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="ApplyDAO"
+		class="org.net9.redbud.storage.hibernate.apply.ApplyDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserinfoDAO"
+		class="org.net9.redbud.storage.hibernate.userinfo.UserinfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="LoginDAO"
+		class="org.net9.redbud.storage.hibernate.login.LoginDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"></ref>
+		</property>
+	</bean>
+	<bean id="PosrecordDAO"
+		class="org.net9.redbud.storage.hibernate.posrecord.PosrecordDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PostsDAO"
+		class="org.net9.redbud.storage.hibernate.posts.PostsDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="DeptsDAO"
+		class="org.net9.redbud.storage.hibernate.depts.DeptsDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="OrgansDAO"
+		class="org.net9.redbud.storage.hibernate.organs.OrgansDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CategoryDAO"
+		class="org.net9.redbud.storage.hibernate.category.CategoryDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TrainingDAO"
+		class="org.net9.redbud.storage.hibernate.training.TrainingDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TrainrecordDAO"
+		class="org.net9.redbud.storage.hibernate.trainrecord.TrainrecordDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TokencontainerDAO"
+		class="org.net9.redbud.storage.hibernate.tokencontainer.TokencontainerDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ApplytraingingDAO"
+		class="org.net9.redbud.storage.hibernate.applytraining.ApplytraingingDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PublicinfologinDAO"
+		class="org.net9.redbud.storage.hibernate.publicinfologin.PublicinfologinDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PublicinfoDAO"
+		class="org.net9.redbud.storage.hibernate.publicinfo.PublicinfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="InternalinfoDAO"
+		class="org.net9.redbud.storage.hibernate.internalinfo.InternalinfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="InternalinfologinDAO"
+		class="org.net9.redbud.storage.hibernate.internalinfologin.InternalinfologinDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="InternaltaskDAO"
+		class="org.net9.redbud.storage.hibernate.internaltask.InternaltaskDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="InternaltaskloginDAO"
+		class="org.net9.redbud.storage.hibernate.internaltasklogin.InternaltaskloginDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+</beans>
+

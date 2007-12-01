@@ -1,0 +1,20 @@
+#
+#Sat Jul 28 19:59:11 CST 2007
+genBasicCompId=false
+sessionFactoryName=org.net9.redbud.storage.hibernate.HibernateSessionFactory
+profile=
+daoSFId=sessionFactory
+version=3.1
+jndiPath=
+springDaoFile=src/servlet.cfg.xml
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+reSettingsFile=
+configFile=/sswts1/src/servlet.cfg.xml
+createConfigFile=false
+addLibs2Classpath=false

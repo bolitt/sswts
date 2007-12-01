@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="applytraining.css" />
+<script type="text/javascript" src="applytraining.js"></script>
+<div class="smallmain">
+
+	<div id="availabletrainingcontainer"></div>
+	<div class="trainingDetail">
+		<div id="trainingDetail">
+			<div id="trainingname"></div>
+			<div id="trainingdescription"></div>
+			<div id="trainingpostcode"></div>
+			<div id="trainingstarttime"></div>
+			<div id="trainingendtime"></div>
+			<div id="trainingdeadline"></div>
+		</div>
+		<div id="applybuttondiv">
+			<button dojoType="Button" onclick='applyTraining()' id="applyButton">
+				<div id="applyButtonLable">
+					申请！
+				</div>
+			</button>
+		</div>
+		<div id="reasondiv">
+			请输入您申请的理由，并按提交：
+			<textarea id="reason"></textarea>
+			<a href="javascript:;" onclick="submitApply()">提交</a>
+		</div>
+	</div>
+</div>
