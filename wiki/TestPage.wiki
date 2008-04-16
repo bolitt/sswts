@@ -1,0 +1,12 @@
+#summary This is a test page.
+
+= Introduction =
+
+ 你可以在这个页面里面随便测试
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
