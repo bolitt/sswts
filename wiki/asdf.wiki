@@ -10,6 +10,6 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
-  * Eamon 先测试一下
+  * Eamon 先测试一下 怎么不能显示中文》
   * TestPage 
   * asdfasdf 
