@@ -4,7 +4,7 @@
 
 ----
 ==目录==
-WikiSyntax is Identified and linked automatically
+WikiSyntax is [Identified] and linked automatically
 
 Wikipage is not identified, so if you have a page named [Wikipage] you
 need to link it explicitly.
