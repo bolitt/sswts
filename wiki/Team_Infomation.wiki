@@ -1,13 +1,11 @@
-#summary 介绍开发团队
+#summary 开发团队简介
 
-= Introduction =
+= 概述 =
 
-Add your content here.
+本系统的开发团队即原清华大学团委社工办(SheGongBan)技术组，现清华大学团委信息中心的成员组成的，目前团队成员全部为清华大学计算机系的同学。其中，6名3字班同学，2名5字班同学，4名6字班同学。
 
+= 人员 =
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ * sillywolf, SLY, DennisZz, urong, Apache, echo ;
+ * phoebus, stan ;
+ * deepsolo, bolitt, Eamon, silver .
