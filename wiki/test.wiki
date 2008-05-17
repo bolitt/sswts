@@ -1,5 +1,5 @@
 #summary 测试页内链接
-
+#pragma section-numbers 1
 [[TableOfContents(3)]]
 = Details =
 
