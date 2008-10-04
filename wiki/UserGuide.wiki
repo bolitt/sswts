@@ -3,23 +3,53 @@
 = SLTC系统简要用户手册 =
 ----
 ==目录==
+
 ==[http://code.google.com/p/sswts/wiki/UserGuide#第一章_概述 第一章 概述]==
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、个人主页 一、个人主页]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、更改信息 二、更改信息]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、修改密码 三、修改密码]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#四、社工经历 四、社工经历]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 岗位浏览与申请 一、 岗位浏览与申请]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、 岗位审批 二、 岗位审批]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、 岗位任免 三、 岗位任免]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 查看培训活动 一、 查看培训活动]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、 查看申请状态 二、 查看申请状态]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、 认证培训活动 三、 认证培训活动]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#四、 发布培训信息 四、 发布培训信息]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#五、 审批培训申请 五、 审批培训申请]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#六、 管理培训活动 六、 管理培训活动]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 校级信息发布 一、 校级信息发布]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、 放行校级信息 二、 放行校级信息]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、 内部通知发布 三、 内部通知发布]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#四、 内部任务部署 四、 内部任务部署]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#五、 任务反馈查看 五、 任务反馈查看]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 浏览人员信息 一、 浏览人员信息]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 修改岗位结构 一、 修改岗位结构]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、 初始化数据库 二、 初始化数据库]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、 重置帐号密码 三、 重置帐号密码]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、社工课报名 一、社工课报名]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、查看报名历史 二、查看报名历史]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、查看上课历史 三、查看上课历史]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#四、审批申请 四、审批申请]===
 
-[http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]==
+===[http://code.google.com/p/sswts/wiki/UserGuide#一、 收件箱 一、 收件箱]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#二、 关于我们 二、 关于我们]===
+===[http://code.google.com/p/sswts/wiki/UserGuide#三、用户手册 三、用户手册]===
 ----
 
 == 第一章 概述 ==
@@ -35,7 +65,7 @@
 ----
 == 第二章 个人信息模块 ==
 
-=== 一、个人主页：===
+=== 一、个人主页===
 * 功能：* 该页面用来显示用户的个人信息。
 
 * 使用：*
@@ -46,7 +76,7 @@
 
 * 权限：* 任何人均可以浏览该页面的所有个人信息。
 
-=== 二、更改信息： ===
+=== 二、更改信息 ===
 * 功能：* 该页面用于用户修改个人信息。
 
 * 使用：*
@@ -54,14 +84,14 @@
   * 页面右面显示的是可以修改的信息，包括国家、民族、籍贯、生日、手机、宿舍电话、宿舍地址、电子邮件、QQ、MSN、GTalk、Blog、特长等，其中手机、宿舍电话、宿舍地址、电子邮件为必填内容，其他为选填内容。修改信息时，国家和民族是通过点击下拉列表选择，生日是通过点击右方“Select a date”按钮进行选择，其他项目在文本框中填写，注意输入的合法性。修改完成之后保存即可。
 * 权限：*任何人均可以修改自己的相关个人信息。
 
-=== 三、修改密码：===
+=== 三、修改密码===
 * 功能：* 该页面用于用户修改密码。
 
 * 使用：* 修改密码时需要输入原始密码进行验证，验证完成以后，输入新密码，然后重复输入新密码点击确定即可修改密码成功。
 
 * 权限：* 各级管理帐号可以修改自己的登录密码。系统无权为使用info帐号、密码登录的用户提供修改密码的服务。
 
-=== 四、社工经历：===
+=== 四、社工经历===
 * 功能：* 该页面用于用户查看自己的社工经历。
 
 * 使用：* 页面中包括当前岗位、曾任岗位、申请历史三个选项卡。进入选项卡以后则可以分别看到用户个人的当前岗位、曾任岗位以及曾经申请岗位的历史记录。
