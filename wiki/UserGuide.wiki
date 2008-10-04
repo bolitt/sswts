@@ -3,15 +3,23 @@
 = SLTC系统简要用户手册 =
 ----
 ==目录==
-  [http://code.google.com/p/sswts/wiki/UserGuide#第一章_概述 第一章 概述]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]
-  [http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]
+==[http://code.google.com/p/sswts/wiki/UserGuide#第一章_概述 第一章 概述]==
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]
+
+[http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]
 ----
 
 == 第一章 概述 ==
