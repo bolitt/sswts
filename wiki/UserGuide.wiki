@@ -2,54 +2,54 @@
 
 = SLTC系统简要用户手册 =
 ----
-==目录==
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第一章_概述 第一章 概述]===
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第一章_概述 第一章 概述]==
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、个人主页 一、个人主页]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、更改信息 二、更改信息]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、修改密码 三、修改密码]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#四、社工经历 四、社工经历]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第二章_个人信息模块 第二章 个人信息模块]==
-  ===[http://code.google.com/p/sswts/wiki/UserGuide#一、个人主页 一、个人主页]===
-  ===[http://code.google.com/p/sswts/wiki/UserGuide#二、更改信息 二、更改信息]===
-  ===[http://code.google.com/p/sswts/wiki/UserGuide#三、修改密码 三、修改密码]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#四、社工经历 四、社工经历]===
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 岗位浏览与申请 一、 岗位浏览与申请]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、 岗位审批 二、 岗位审批]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、 岗位任免 三、 岗位任免]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第三章_岗位管理模块 第三章 岗位管理模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、岗位浏览与申请 一、 岗位浏览与申请]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、岗位审批 二、 岗位审批]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、岗位任免 三、 岗位任免]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 查看培训活动 一、 查看培训活动]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、 查看申请状态 二、 查看申请状态]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、 认证培训活动 三、 认证培训活动]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#四、 发布培训信息 四、 发布培训信息]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#五、 审批培训申请 五、 审批培训申请]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#六、 管理培训活动 六、 管理培训活动]===
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 校级信息发布 一、 校级信息发布]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、 放行校级信息 二、 放行校级信息]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、 内部通知发布 三、 内部通知发布]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#四、 内部任务部署 四、 内部任务部署]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#五、 任务反馈查看 五、 任务反馈查看]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第四章_培训管理模块 第四章 培训管理模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、查看培训活动 一、 查看培训活动]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、查看申请状态 二、 查看申请状态]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、认证培训活动 三、 认证培训活动]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#四、发布培训信息 四、 发布培训信息]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#五、审批培训申请 五、 审批培训申请]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#六、管理培训活动 六、 管理培训活动]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 浏览人员信息 一、 浏览人员信息]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第五章_工作信息模块 第五章 工作信息模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、校级信息发布 一、 校级信息发布]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、放行校级信息 二、 放行校级信息]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、内部通知发布 三、 内部通知发布]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#四、内部任务部署 四、 内部任务部署]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#五、任务反馈查看 五、 任务反馈查看]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 修改岗位结构 一、 修改岗位结构]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、 初始化数据库 二、 初始化数据库]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、 重置帐号密码 三、 重置帐号密码]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第六章_信息统计模块 第六章 信息统计模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、浏览人员信息 一、 浏览人员信息]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、社工课报名 一、社工课报名]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、查看报名历史 二、查看报名历史]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、查看上课历史 三、查看上课历史]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#四、审批申请 四、审批申请]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第七章_系统设置模块 第七章 系统设置模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、修改岗位结构 一、 修改岗位结构]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、初始化数据库 二、 初始化数据库]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、重置帐号密码 三、 重置帐号密码]====
 
-==[http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]==
-===[http://code.google.com/p/sswts/wiki/UserGuide#一、 收件箱 一、 收件箱]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#二、 关于我们 二、 关于我们]===
-===[http://code.google.com/p/sswts/wiki/UserGuide#三、用户手册 三、用户手册]===
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第八章_社工课模块 第八章 社工课模块]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、社工课报名 一、社工课报名]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、查看报名历史 二、查看报名历史]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、查看上课历史 三、查看上课历史]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#四、审批申请 四、审批申请]====
+
+  ===[http://code.google.com/p/sswts/wiki/UserGuide#第九章_收件箱模块及其他 第九章 收件箱模块及其他]===
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#一、收件箱 一、 收件箱]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#二、关于我们 二、 关于我们]====
+    ====[http://code.google.com/p/sswts/wiki/UserGuide#三、用户手册 三、用户手册]====
 ----
 
 == 第一章 概述 ==
@@ -101,14 +101,14 @@
 ----
 == 第三章 岗位管理模块 ==
 
-=== 一、 岗位浏览与申请 ===
+=== 一、岗位浏览与申请 ===
 * 功能：*浏览社会工作各个岗位详情，比如某一岗位的名称、描述、需求，以及该岗位的锻炼强度、工作强度、相关岗位等等；提交申请一个空闲且可见的岗位。可浏览与申请的岗位包括“校级岗位”、“系级岗位”和“协会岗位”。
 
 * 使用：*点击选项，右侧刷新显示校级岗位、系级岗位和协会岗位三个标签卡。点击标签卡可显示相应岗位结构。例如：点击标签卡“校级岗位”，则显示以“校团委”为根的岗位树。点击文件夹图标左边的+或-图标可以展开或收起节点内容。点击岗位树叶节点（实际岗位名称），即可在右边显示该岗位相应信息。每个岗位后显示当前状态（空闲或已在岗），已在岗的岗位无法申请，为灰色；空闲的岗位可申请，右侧有“申请该岗位”选项，点击即可弹出岗位申请理由输入文本框。输入理由之后，完毕后点击“提交”即可提交申请。则页面右上角会显示“申请提交成功”或者“申请提交失败”等信息。
 
 * 权限：*任何人均可浏览与申请全部校级岗位、协会岗位，除root外，任何人只能浏览本系系级岗位。例如用户所在院系为电子系，系级岗位选项中只可看到电子的岗位信息，但是校级岗位和协会岗位不受限制，可以浏览全部内容。
 
-=== 二、 岗位审批 ===
+=== 二、岗位审批 ===
 * 功能：*审批管辖范围内的岗位申请请求。
 
 * 使用：*如果有岗位申请请求，则对于申请请求，在一行中相应出现申请职位、申请人姓名、学号信息，和“申请详情”、“同意”、“拒绝”按钮。其中申请请求按照时间先后顺序排列，申请时间较早的靠前，依次类推。
@@ -121,7 +121,7 @@
  
 * 权限：*2级以上节点管理员有对其下属的申请进行审批的权限，其余节点该功能不可使用。
 
-=== 三、 岗位任免 ===
+=== 三、岗位任免 ===
 * 功能：*供具有相应权限的管理员对其管辖的岗位人员进行任免。如不具备权限，则岗位任免选项为灰色，不可选。
 
 * 使用：*
@@ -144,7 +144,7 @@
 ----
 == 第四章	培训管理模块 ==
 
-===一、	查看培训活动===
+===一、查看培训活动===
 *功能：*可以查看到目前能够参加的所有培训，包括公开的培训（不需申请可直接参加）和需要申请的培训。
 
 *使用：*
@@ -155,14 +155,14 @@
  
 *权限：*任何人都具有查看培训活动的权限。
 
-===二、	查看申请状态===
+===二、查看申请状态===
 *功能：*可以查看自己已经申请的培训的申请状态，包括“待审批”、“已通过”、“被否决”三种状态。如果某项培训活动后方的的培训状态显示为“已通过”，则表明你已经可以参加该培训；“被否决”则表明由于某种原因你的申请被管理者拒绝，你不能参加该培训。
 
 *使用：*点击查看申请状态选项，右侧就会显示相应的申请状态。
 
 *权限：*任何人都具有查看申请状态的权限。
 
-===三、	认证培训活动===
+===三、认证培训活动===
 *功能：*可以认证自己已经参加过的所有培训，可以查看自己已经认证过的所有培训。
 
 *使用：*
@@ -172,7 +172,7 @@
 
 *权限：*任何人都具有认证培训活动的权限。
 
-===四、	发布培训信息===
+===四、发布培训信息===
 *功能：*发布一个新的培训活动
 
 *使用：*
@@ -187,14 +187,14 @@
 
 *权限：*2级及2级以上节点的管理员有权利对此项进行操作
 
-===五、	审批培训申请===
+===五、审批培训申请===
 *功能：*查看自己可以审批的所有培训，平且可以对申请进行审批
 
 *使用：*点击“详情”可以查看所申请的培训以及申请人的详细信息；点击“同意”则同意该人的申请；点击“拒绝”则拒绝该人的申请。
 
 *权限：*2级及2级以上节点的管理员有权利对此项进行操作，但只有发布培训信息的部门才能进行申请审批。比如，校团委发布的培训活动，当有人申请时，只有校团委才能审批，其他人（如root）无权审批。
 
-=== 六、 管理培训活动 ===
+=== 六、管理培训活动 ===
 *功能：*管理自己所发布的培训活动，包括“当前培训”和“过往培训”，对于“当前培训”则可以“查看培训信息”、“修改删除培训”和管理“密码条”；对于“过往培训”则只能“查看培训信息”。密码条功能：认证培训活动。
 
 *使用：*
@@ -210,7 +210,7 @@
 ----
 == 第五章 工作信息模块 ==
 
-=== 一、 校级信息发布 ===
+=== 一、校级信息发布 ===
 *功能：*申请发布全校性信息，交给root等待其批准，如果root放行则信息向所有用户发布。每个用户会收到一个信息。
 
 *使用：*
@@ -222,10 +222,10 @@
   * 只有root有权限决定是否发布校级信息。
   * 只有2级以上节点有权限申请发布校级信息。
 
-=== 二、 放行校级信息 ===
+=== 二、放行校级信息 ===
 *功能：*只有root有这样的权限可以进行这个操作。root一旦同意放行则系统校内所有的用户都会收到信息。如果root拒绝放行，那么信息不会发布。
 
-=== 三、 内部通知发布 ===
+=== 三、内部通知发布 ===
 *功能：*用于各部门负责人向下属发布通知，下属用户收到通知信息后不可回复。
 
 *使用：*
@@ -239,7 +239,7 @@
   *	任何有管理权限的用户均有发布内部通知的权限。
   *	内部通知只能发送给使用者的下属岗位用户。
 
-=== 四、 内部任务部署 ===
+=== 四、内部任务部署 ===
 *功能：*用于各部门负责人向下属部署任务，此功能与“内部通知发布”的区别在于，下属用户收到任务部署信息后需要回复确认任务信息。
 
 *使用：*
@@ -253,7 +253,7 @@
   *	任何有管理权限的用户均有部署内部任务的权限。
   *	内部任务只能发送给使用者的下属岗位用户。
 
-=== 五、 任务反馈查看 ===
+=== 五、任务反馈查看 ===
 *功能：*用于用户查看任务反馈情况，分为两个标签，一个是当前任务箱，一个是过往任务箱。其功能上大体一致，主要是为了方便管理，用户可以将已布置的任务从当前任务箱移至过往任务箱。
 
 *使用：*
@@ -270,7 +270,7 @@
 ----
 == 第六章 信息统计模块 ==
 
-=== 一、 浏览人员信息 ===
+=== 一、浏览人员信息 ===
 *功能：*
 	* 具有2级节点（或以上）权限的用户可以浏览自己部门的人员信息。其中人员信息在选择相关的显示属性，并点击查看详情之后，以表格的形式显示。
 	* 同时，在人员信息中支持动态搜索，以及自动生成表格功能。
@@ -288,7 +288,7 @@
 
 ----
 == 第七章 系统设置模块 ==
-=== 一、	修改岗位结构 ===
+=== 一、修改岗位结构 ===
 *功能：*
 		修改1级节点（或以上）管理范围之内的岗位结构信息。具体可以增加、编辑和删除相关部门和岗位。
 
@@ -307,7 +307,7 @@
 仅有1级节点（或以上）由权限进行修改岗位结构操作。
 并且操作范围为该节点管辖的范围（例如：“计算机系管理帐号”只能修改计算机系社会工作岗位结构）。
 
-=== 二、	初始化数据库 ===
+=== 二、初始化数据库 ===
 *功能：*
 用csv格式文件直接初始化数据库。只支持导入二级节点（或以上）的按模板方式组织的岗位信息表。
 
@@ -319,7 +319,7 @@
 *权限：*
 该功能仅root可见、可用。
 
-=== 三、	重置帐号密码 ===
+=== 三、重置帐号密码 ===
 *功能：* 具有root权限的帐号，重置其它管理帐号密码。点击之后，在右方表单中显示所有管理帐号。
 
 *使用：*
@@ -375,7 +375,7 @@
 ----
 == 第九章	收件箱模块及其他 ==
 
-=== 一、 收件箱 ===
+=== 一、收件箱 ===
 *功能：*用于对各种信息的查看。
 	* 任务箱功能：查看和回复上级要求的工作任务部署
 	* 信息箱功能：查看内部通知发布。信息箱和任务箱不同之处在于它不能回复信息。
@@ -391,7 +391,7 @@
 
 *权限：*
 所有人均有使用收件箱的权限。
-=== 二、 关于我们 ===
+=== 二、关于我们 ===
 *功能：*用户可以在该链接下查看关于“清华大学学生工作信息中心”和项目开发人员的基本情况。
 === 三、用户手册 ===
 *功能：*用户通过查看用户手册了解本网站的各个功能及其使用方式和权限。
