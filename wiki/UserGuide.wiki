@@ -3,7 +3,7 @@
 = SLTC系统简要用户手册 =
 ----
 ==目录==
-[http://code.google.com/p/sswts/wiki/UserGuide/#第一章_概述]==第一章	概述	==
+[http://code.google.com/p/sswts/wiki#UserGuide/#第一章_概述 ==第一章	概述	==]
 ==第二章	个人信息模块==
 ==第三章	岗位管理模块	==
 ==第四章	培训管理模块	==
